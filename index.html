@@ -27,7 +27,7 @@
       <header>
         <span class="ribbon-outer">
           <span class="ribbon-inner">
-            <h1><em class="name"></em>me</em>在&quot;爱背词&quot;上坚持了<em class="days">0</em>天，过招<em class="count">0</em>个单词</h1>
+            <h1><em class="name" id="name">me</em>在&quot;爱背词&quot;上坚持了<em class="days">0</em>天，过招<em class="count">0</em>个单词</h1>
             <h2></h2>
           </span>
           <span class="left-tail"></span>
@@ -80,8 +80,8 @@
       var r = window.location.search.substr(1).match(reg); 
       if (r != null) return unescape(r[2]); return null; 
     } 
-    document.title="hello world"
-    document.getElementsByClassName("name").InnerHTML=getQueryString("name")
+    document.title=getQueryString("name")
+    document.getElementById("name").InnerHTML=getQueryString("name")
     document.getElementsByClassName("days").InnerHTML=getQueryString("days")
     document.getElementsByClassName("count").InnerHTML=getQueryString("count")
   </script>

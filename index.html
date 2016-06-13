@@ -83,8 +83,8 @@
     var tt=getQueryString("name") + "在\"爱背词\"上坚持了" + getQueryString("days") + "天，过招" + getQueryString("count") + "个单词";
     document.title=tt;
     document.getElementById("headline1").innerHTML=tt;
-    document.getElementById("days").innerHTML=getQueryString("days");
-    document.getElementById("count").innerHTML=getQueryString("count");
+    document.getElementById("days").innerHTML=getQueryString("days")+'天';
+    document.getElementById("count").innerHTML=getQueryString("count")+'词';
     document.getElementById("face").innerHTML=faceHTML;
   </script>
 </html>

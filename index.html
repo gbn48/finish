@@ -78,12 +78,14 @@
       var r = window.location.search.substr(1).match(reg); 
       if (r != null) return unescape(r[2]); return null; 
     }
+    var face=getQueryString("face") || "https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/logo/bd_logo1_31bdc765.png"
+    var faceHTML='<img src="' + face + '" alt="">'
     var tt=getQueryString("name") + "在\"爱背词\"上坚持了" + getQueryString("days") + "天，过招" + getQueryString("count") + "个单词";
     document.title=tt;
     document.getElementById("headline1").innerHTML=tt;
     document.getElementById("days").innerHTML=getQueryString("days");
     document.getElementById("count").innerHTML=getQueryString("count");
-    document.getElementById("face").innerHTML=getQueryString("face");
+    document.getElementById("face").innerHTML=faceHTML;
   </script>
 </html>
 

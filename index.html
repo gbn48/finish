@@ -27,7 +27,7 @@
       <header>
         <span class="ribbon-outer">
           <span class="ribbon-inner">
-            <h1>{$name}在&quot;爱背词&quot;上坚持了{$days}天，过招{$count}个单词</h1>
+            <h1><em class="name"></em>me</em>在&quot;爱背词&quot;上坚持了<em class="days">0</em>天，过招<em class="count">0</em>个单词</h1>
             <h2></h2>
           </span>
           <span class="left-tail"></span>
@@ -37,7 +37,7 @@
 
       <section id="downloads">
         <span class="inner">
-          <a href="#" class="zip"><em>{$days}</em> 天</a><a href="#" class="tgz"><em>{$count}</em> 词</a>
+          <a href="#" class="zip"><em class="days">0</em> 天</a><a href="#" class="tgz"><em class="count">0</em> 词</a>
         </span>
       </section>
 
@@ -76,6 +76,7 @@
   
   <script type="text/javascript">
     document.title="hello world"
+    document.getElementByClassName("name").InnerHTML="Gaobin"
   </script>
 </html>
 

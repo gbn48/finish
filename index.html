@@ -81,7 +81,7 @@
     }
     var face=getQueryString("face") || "https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/logo/bd_logo1_31bdc765.png"
     var faceHTML='<img src="' + face + '" alt="">'
-    var tt=getQueryString("name") + "在\"爱背词\"上坚持了" + getQueryString("days") + "天，过招" + getQueryString("count") + "个单词";
+    var tt=decodeURI(getQueryString("name")) + "在\"爱背词\"上坚持了" + getQueryString("days") + "天，过招" + getQueryString("count") + "个单词";
     document.title=tt;
     document.getElementById("headline1").innerHTML=tt;
     document.getElementById("days").innerHTML=getQueryString("days")+'天';

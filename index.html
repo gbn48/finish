@@ -85,9 +85,9 @@
     var face=getQueryString("face") || "https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/logo/bd_logo1_31bdc765.png"
     var faceHTML='<img src="' + face + '" alt="">'
     //var tt=decodeURI(getQueryString("name")) + "在\"爱背词\"上坚持了" + getQueryString("days") + "天，过招" + getQueryString("count") + "个单词";
-    var tt="我" + "在\"爱背词\"上坚持了" + getQueryString("days") + "天，今天记住了" + getQueryString("count") + "个单词";
+    var tt="我" + "在微信上坚持了" + getQueryString("days") + "天，今天记住了" + getQueryString("count") + "个单词";
     var ttt="我今天用微信背过了" + getQueryString("count") + "个单词（第" + getQueryString("days") + "天打卡）";
-    document.title=tt;
+    document.title=ttt;
     document.getElementById("headline1").innerHTML=tt;
     document.getElementById("days").innerHTML=getQueryString("days")+'天';
     document.getElementById("count").innerHTML=getQueryString("count")+'词';
